@@ -34,22 +34,9 @@ public class Easter{
         //Divide h + r - 7 * m + 114 by 31 and get a quotient n and a remainder p.
         int n = (int)(h + r - 7 * m + 114)/31;
         int p = (h + r - 7 * m + 114)%31;
-        System.out.println("a = "+a);
-         
-         System.out.println(b);
-         System.out.println(c);
-         System.out.println(d);
-         System.out.println(e);
-         System.out.println(f);
-         System.out.println(g);
-        System.out.println(h);
-         System.out.println(i);
-         System.out.println(k);
-         System.out.println(r);
-         System.out.println(m);
-         System.out.println(n);
-         System.out.println(p);
-         
+
+         System.out.print("Easter falls on "+ n+"/");
+         System.out.println(p+1 + " in " + y);
     }
 }
 
