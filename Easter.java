@@ -49,7 +49,7 @@ public class Easter{
          System.out.println(m);
          System.out.println(n);
          System.out.println(p);
-        
+         
     }
 }
 
