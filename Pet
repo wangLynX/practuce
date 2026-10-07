@@ -2,24 +2,21 @@
 
 public class Pet {
   public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        
-            String color = scan.nextLine();
-            String season = scan.nextLine();
-            String name = scan.nextLine();
+          if (color.equals("red")){
+              if (name.substring(0,1)=="a" || name.substring(0,1)=="e" || name.substring(0,1)=="i" || name.substring(0,1)=="o", name.substring(0,1)=="u"){
+                
+              } else {
+                 
+              }
+         } else if (color.equals("blue")){
 
-            if (input.equals("red")){
-                 if (name.substring(0,1)=="a" || name.substring(0,1)=="e" || name.substring(0,1)=="i" || name.substring(0,1)=="o", name.substring(0,1)=="u"){
-                     return "porcupine";
-                 } else {
-                    return "panda";
-                 }
-            } else if (input.equals("blue")){
+         } else if (color.equals("green")){
 
-            } else if (input.equals("green")){
+         } else {
 
-            } else {
+         }
 
-            }
+	}
+
         
 }
