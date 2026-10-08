@@ -2,21 +2,27 @@
 
 public class Pet {
   public static void main(String[] args) {
-          if (color.equals("red")){
+    Scanner color = new Scanner(System.in);
+    Scanner season = new Scanner(System.in);
+    Scanner name = new Scanner(System.in);
+    petAssign(); 
+         public  petAssign (){
+           if (color.equals("red")){
               if (name.substring(0,1)=="a" || name.substring(0,1)=="e" || name.substring(0,1)=="i" || name.substring(0,1)=="o", name.substring(0,1)=="u"){
                 
               } else {
                  
               }
          } else if (color.equals("blue")){
-
+           
          } else if (color.equals("green")){
-
+           
          } else {
 
          }
 
 	}
+         }
 
         
 }
