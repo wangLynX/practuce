@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Program picks a pet based off of one's favorite color, season, and their name
 public class Pet {
 
   public static void main(String[] args) {
