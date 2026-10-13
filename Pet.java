@@ -22,8 +22,11 @@ public class Pet {
   
      String start = name.substring(0,1);
 
-   String pet = "";
-           if (color.equals("red")){
+     String pet = "";
+  
+   if(season.equals("fall")&&season.equals("spring")&&season.equals("winter")&&season.equals("summer")){
+
+   if (color.equals("red")){
                
                
               if (start.equals("a") || start.equals("e") || start.equals("i") ||start.equals("o") || start.equals("u")){
@@ -55,15 +58,18 @@ public class Pet {
          } else if (color.equals("green")){
            
          } else {
-           pet = "YOU SUCK";
-           System.out.println("YOU SUCK");
+           
+           System.out.println("Please enter a valid color");
             return pet;
 
-    
+         }
 
+         } else {
+          System.out.println("Please enter a valid season");
+          return pet;
          }
          pet = "rock";
-         System.out.print(pet);
+         System.out.println(pet);
          return pet;
 
 	
