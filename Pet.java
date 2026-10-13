@@ -21,13 +21,26 @@ public class Pet {
   public static String petAssign (String color, String season, String name){
   
      String start = name.substring(0,1);
-
+String j;
      String pet = "";
+   for(int i = 0; i<10; i++){
+    j = i+"";         
+    if (start.equals(j)){
+                  System.out.println("Please enter a valid name");
+                  return pet;
+                }
+               }
+   if(season.equals("fall")||season.equals("spring")||season.equals("winter")||season.equals("summer")){
+      
   
-   if(season.equals("fall")&&season.equals("spring")&&season.equals("winter")&&season.equals("summer")){
+  } else {
+          System.out.println("Please enter a valid season");
+          return pet;
+         }
+        
 
    if (color.equals("red")){
-               
+              
                
               if (start.equals("a") || start.equals("e") || start.equals("i") ||start.equals("o") || start.equals("u")){
                 pet = "porcupine";
@@ -38,8 +51,17 @@ public class Pet {
                 return pet;
               }
          } else if (color.equals("blue")){
-          if((start != "e" && start != "a" && start != "i" && start != "o" && start != "u")){
-             if (season.equals("winter")|| season.equals("spring") ){
+          if((!start.equals( "e") && !start.equals( "i") &&!start.equals( "a")&& !start.equals( "o") && !start.equals( "u"))){
+
+             if (season.equals("winter")){
+
+             pet = "ostrich";
+                System.out.println(pet);
+                return pet;
+              
+
+              } else if ((season.equals("winter")|| season.equals("spring") )){
+            
                 pet = "axolotl";
                 System.out.println(pet);
                 return pet;
@@ -56,21 +78,25 @@ public class Pet {
 
            }
          } else if (color.equals("green")){
-           
+           if(season.equals("winter")&&(!start.equals( "e") && !start.equals( "i") &&!start.equals( "a")&& !start.equals( "o") && !start.equals( "u"))){
+               pet = "giraffe";
+               System.out.println(pet);
+               return pet; 
+           } else if (!season.equals("fall")){
+                pet = "dog"; 
+            System.out.println(pet);
+            return pet;
+           }
          } else {
            
            System.out.println("Please enter a valid color");
             return pet;
 
          }
-
-         } else {
-          System.out.println("Please enter a valid season");
-          return pet;
-         }
          pet = "rock";
          System.out.println(pet);
          return pet;
+       
 
 	
         
