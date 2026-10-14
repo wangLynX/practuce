@@ -38,8 +38,10 @@ String j;
           return pet;
          }
         
+//RED
 
-   if (color.equals("red")){
+
+             if (color.equals("red")){
               
                
               if (start.equals("a") || start.equals("e") || start.equals("i") ||start.equals("o") || start.equals("u")){
@@ -50,34 +52,35 @@ String j;
                 System.out.println("panda");
                 return pet;
               }
-         } else if (color.equals("blue")){
-          if((!start.equals( "e") && !start.equals( "i") &&!start.equals( "a")&& !start.equals( "o") && !start.equals( "u"))){
 
-             if (season.equals("winter")){
+
+  //BLUE             
+
+         } else if (color.equals("blue")){
+          
+             if (season.equals("spring")){
 
              pet = "ostrich";
                 System.out.println(pet);
                 return pet;
-              
+           
 
-              } else if ((season.equals("winter")|| season.equals("spring") )){
+
+              } else if ((season.equals("winter")|| season.equals("spring") )&& !start.equals( "e") && !start.equals( "i") &&!start.equals( "a")&& !start.equals( "o") && !start.equals( "u")){
             
                 pet = "axolotl";
                 System.out.println(pet);
                 return pet;
-             }
-          }
-           if (season.equals("spring")){
-             pet = "ostrich";
-             System.out.println(pet);
-             return pet;
-           } else if (season.equals("fall")){
+             } else if (season.equals("fall")){
             pet = "alligator";
             System.out.println(pet);
             return pet;
 
            }
-         } else if (color.equals("green")){
+
+  //GREEN
+         
+          } else if (color.equals("green")){
            if(season.equals("winter")&&(!start.equals( "e") && !start.equals( "i") &&!start.equals( "a")&& !start.equals( "o") && !start.equals( "u"))){
                pet = "giraffe";
                System.out.println(pet);
@@ -93,13 +96,15 @@ String j;
             return pet;
 
          }
+
+         if(season.equals("summer")){
+             pet = "pony";
+             System.out.println(pet);
+             return pet;
+         }
          pet = "rock";
          System.out.println(pet);
          return pet;
-       
-
-	
-        
 }
 
 }
