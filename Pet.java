@@ -97,6 +97,8 @@ String j;
 
          }
 
+//SUMMER
+
          if(season.equals("summer")){
              pet = "pony";
              System.out.println(pet);
