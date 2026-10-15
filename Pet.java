@@ -10,14 +10,15 @@ public class Pet {
        String season = scan.nextLine().toLowerCase();
         String name = scan.nextLine().toLowerCase();
     
+          //precondition: no pet 
+  //post condition: pet that is given in accord to user's selection of color, season, and name
     
    if(color!=null && season!=null && name!=null){
         petAssign(color, season, name);
-   } else {
-     System.out.println("YOU SUCK");
    }
   
   }
+
   public static String petAssign (String color, String season, String name){
   
      String start = name.substring(0,1);
