@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Madelyn Wang
 //Program picks a pet based off of one's favorite color, season, and their name
 public class Pet {
 
@@ -13,11 +13,13 @@ public class Pet {
           //precondition: no pet 
   //post condition: pet that is given in accord to user's selection of color, season, and name
     
-   if(color!=null && season!=null && name!=null){
+   if(!color.equals("") &&! season.equals("") && !name.equals("")){
         petAssign(color, season, name);
+   } else {
+    System.out.println ("Please fill in the information required.");
    }
   
-  }
+  } 
 
   public static String petAssign (String color, String season, String name){
   
