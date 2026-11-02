@@ -6,7 +6,7 @@ public class  Practice {
 public static void main(String [] args) {
      Scanner scan = new Scanner(System.in);
      String input = scan.nextLine();
-     stars(4);
+     stars(9);
      odds(9);
      
  }
@@ -20,8 +20,16 @@ public static void main(String [] args) {
 //  *********
 //  ***********
 //  *************
-    int index = 1;
-   
+    int index = 0;
+    int j = 0;
+   while(index<=rows){
+    while(j<=index){
+        System.out.print("*");
+    j++;
+    }
+    System.out.println(index);
+    index++;
+   }
 for(int p=0;p<rows;p++){
    for(int i=0;i<=p;i++){
        System.out.print("*");
