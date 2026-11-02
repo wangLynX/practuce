@@ -13,7 +13,7 @@ public static void main(String [] args) {
     public static void stars(int rows){
 //  *
 //  ***
-//  *****as
+//  *****
 
 
 //  *******
@@ -23,12 +23,13 @@ public static void main(String [] args) {
     int index = 1;
    
 for(int p=0;p<rows;p++){
-   for(int i=p;i<=rows;i++){
+   for(int i=0;i<=p;i++){
        System.out.print("*");
 
 
    }
     System.out.println("");
+   
 }
  
 }
