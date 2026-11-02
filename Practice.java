@@ -7,7 +7,8 @@ public static void main(String [] args) {
      Scanner scan = new Scanner(System.in);
      String input = scan.nextLine();
      stars(9);
-     odds(9);
+     odds(7);
+     triangle(9);
      
  }
     public static void stars(int rows){
@@ -46,18 +47,27 @@ for(int p=0;p<rows;p++){
    
     public static void triangle(int rows){
         int in = 1;
-        while(in < 10) {
-           
+        int a = 0;
+        while(in <= rows) {
+            while(a<=in){
+             System.out.print(in); 
+             a++;
+            }
+            System.out.println("");
+            
+           in++;
         }
     }
    
     public static void odds(int start){
        
-        for(int i = 9; i>=1; i-=2) {
+        for(int i = start; i>=1; i-=2) {
             System.out.print(i);
-            for(int j = i; j<= start; j++){
+            for(int j = i+start-2; j>= start; j--){
                System.out.print(i);
+               
             }
+           System.out.println("");
            
         }
     }
