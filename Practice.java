@@ -40,10 +40,11 @@ public static void main(String [] args) {
 
    
     public static void triangle(int rows){
-        int in = 1;
+        int in = 0;
         int a = 0;
         while(in <= rows) {
-            while(a<=in){
+            a=0;
+            while(a<in){
              System.out.print(in); 
              a++;
             }
