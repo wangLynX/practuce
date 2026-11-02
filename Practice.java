@@ -9,7 +9,7 @@ public static void main(String [] args) {
      stars(9);
      odds(7);
      triangle(9);
-     eo(7);
+     eo(8);
      
  }
     public static void stars(int rows){
@@ -24,23 +24,16 @@ public static void main(String [] args) {
 //  *************
     int index = 0;
     int j = 0;
-   while(index<=rows){
+   while(index<rows){
+    j=0;
     while(j<=index){
-        System.out.print("*");
+    System.out.print("*");
     j++;
     }
-    System.out.println(index);
+    System.out.println("");
     index++;
    }
-for(int p=0;p<rows;p++){
-   for(int i=0;i<=p;i++){
-       System.out.print("*");
 
-
-   }
-    System.out.println("");
-   
-}
  
 }
 
