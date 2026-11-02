@@ -9,7 +9,7 @@ public static void main(String [] args) {
      stars(9);
      odds(7);
      triangle(9);
-     eo(5);
+     eo(7);
      
  }
     public static void stars(int rows){
@@ -86,13 +86,19 @@ for(int p=0;p<rows;p++){
 //O
  for(int i = 0; i<=maxE; i++){
     for(int g = 0; g<i; g++){
-        
+        if(maxE%2==0){
         if(i%2 == 0){
           System.out.print("E");
         } else{
            System.out.print("O");
         }
-       
+    } else {
+         if(i%2 == 0){
+          System.out.print("O");
+        } else{
+           System.out.print("E");
+        }
+    }
     }
 System.out.println("");
  }
@@ -101,15 +107,15 @@ System.out.println("");
     for(int g = maxE-1; g>i; g--){
          if(maxE%2==0){
         if(i%2 == 0){
-          System.out.print("E");
+          System.out.print("O");
         } else{
-           System.out.print("O");
+           System.out.print("E");
         }
     } else {
 if(i%2 == 0){
-          System.out.print("E");
+          System.out.print("O");
         } else{
-           System.out.print("O");
+           System.out.print("E");
         }
     }
        
