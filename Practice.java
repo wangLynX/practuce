@@ -1,15 +1,22 @@
 
-import java.util.Scanner;
+import java.util.*;
 //Madelyn Wang
 //This program is a collection of methods that utilize loops to print out characters in rows
 public class  Practice {
 public static void main(String [] args) {
      Scanner scan = new Scanner(System.in);
      String input = scan.nextLine();
+
+     for(int h = 0; h<input.length()-1; h++){
+           if(input.equals(""+h)){
+              //int i = Math.floor(input); 
+     }
+     }
      stars(9);
      odds(7);
      triangle(9);
      eo(8);
+     pyramid(5);
      
  }
     public static void stars(int rows){
@@ -118,14 +125,14 @@ System.out.println("");
  }
     }
 
+public static void pyramid(int rows){
+    for(int i = 1; i<=rows; i++){
+         for(int y = rows*2+5; y>=i*2; y-=2)
+            
+            System.out.print(i);
+        System.out.println(""); 
+        }
+         System.out.println("");
+    }
 
 }
-
-
-
-
-
-
-
-
-
