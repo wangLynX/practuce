@@ -127,8 +127,8 @@ System.out.println("");
 
 public static void pyramid(int rows){
     for(int i = 1; i<=rows; i++){
-         for(int y = rows*2+5; y>=i*2; y-=2)
-            
+         for(int p = rows+i-2; p>= rows; p--)
+           
             System.out.print(i);
         System.out.println(""); 
         }
