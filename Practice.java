@@ -5,18 +5,14 @@ import java.util.*;
 public class  Practice {
 public static void main(String [] args) {
      Scanner scan = new Scanner(System.in);
-     String input = scan.nextLine();
+     int input = scan.nextInt();
 
-     for(int h = 0; h<input.length()-1; h++){
-           if(input.equals(""+h)){
-              //int i = Math.floor(input); 
-     }
-     }
-     stars(9);
-     odds(7);
-     triangle(9);
-     eo(8);
-     pyramid(5);
+
+     stars(input);
+     odds(input);
+     triangle(input);
+     eo(input);
+     pyramid(input);
      
  }
     public static void stars(int rows){
@@ -127,12 +123,13 @@ System.out.println("");
 
 public static void pyramid(int rows){
     for(int i = 1; i<=rows; i++){
-         for(int p = rows+i-2; p>= rows; p--)
-           
-            System.out.print(i);
-        System.out.println(""); 
-        }
+         for(int j =rows*2+1; j>= i; j-=2){
+               
+               System.out.print(i);
+               
+            }
          System.out.println("");
     }
 
+}
 }
