@@ -1,6 +1,7 @@
 
 import java.util.*;
 //Madelyn Wang
+// clas created on Nov 2 2026
 //This program is a collection of methods that utilize loops to print out characters in rows
 public class  Practice {
 public static void main(String [] args) {
@@ -15,6 +16,8 @@ public static void main(String [] args) {
      pyramid(input);
      
  }
+ //precondition: input is integer
+ //postcondition: number of stars in input number of rows, with stars increasing every row
     public static void stars(int rows){
 //  *
 //  ***
@@ -40,8 +43,8 @@ public static void main(String [] args) {
  
 }
 
-
-   
+//precondition: input is integer
+   //post condition: numbers 1 to input displayed in ascending order, with number of numbers increasing every row
     public static void triangle(int rows){
         int in = 0;
         int a = 0;
@@ -56,9 +59,12 @@ public static void main(String [] args) {
            in++;
         }
     }
-   
+   //precondition: input is integer
+//post condition: displays odd numbers from 1 to input with number of odd numbers decreasing in every row 
     public static void odds(int start){
-       
+       if(start%2==0){
+          start = start-1;
+       }
         for(int i = start; i>=1; i-=2) {
             System.out.print(i);
             for(int j = i+start-2; j>= start; j--){
@@ -69,6 +75,8 @@ public static void main(String [] args) {
            
         }
     }
+    //precondition: input is integer
+//post condition: makes series of Es and Os that number of rows correspond with input, starts with O if even and E if odd
     public static void eo(int maxE){
 //O
 //EE
@@ -120,16 +128,29 @@ if(i%2 == 0){
 System.out.println("");
  }
     }
-
+//precondition: input is integer
+//post condition: makes upside down pyramid of numbers with number of rows that is the input
 public static void pyramid(int rows){
-    for(int i = 1; i<=rows; i++){
-         for(int j =rows*2+1; j>= i; j-=2){
-               
-               System.out.print(i);
+  int start = 1;
+  int whileStart=0;
+    for(int i = rows; i>=1; i--){
+       
+         for(int j = i*2-1; j>=1; j--){
+            
+            while(whileStart<=start){
+               System.out.print(" ");
+                whileStart++;
+            }
+            
+               System.out.print(start);
                
             }
+            start++;
+            whileStart = 0;
          System.out.println("");
     }
+
+  
 
 }
 }
