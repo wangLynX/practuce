@@ -1,7 +1,7 @@
 
 import java.util.*;
 //Madelyn Wang
-// clas created on Nov 2 2026
+// class created on Nov 2 2026
 //This program is a collection of methods that utilize loops to print out characters in rows
 public class  Practice {
 public static void main(String [] args) {
