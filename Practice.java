@@ -16,7 +16,7 @@ public static void main(String [] args) {
      pyramid(input);
      
  }
- //precondition: input is integer
+ //precondition: input is integer, cannot be negative
  //postcondition: number of stars in input number of rows, with stars increasing every row
     public static void stars(int rows){
 //  *
@@ -43,7 +43,7 @@ public static void main(String [] args) {
  
 }
 
-//precondition: input is integer
+//precondition: input is integer  cannot be negative
    //post condition: numbers 1 to input displayed in ascending order, with number of numbers increasing every row
     public static void triangle(int rows){
         int in = 0;
@@ -59,7 +59,7 @@ public static void main(String [] args) {
            in++;
         }
     }
-   //precondition: input is integer
+   //precondition: input is integer  cannot be negative
 //post condition: displays odd numbers from 1 to input with number of odd numbers decreasing in every row 
     public static void odds(int start){
        if(start%2==0){
@@ -75,7 +75,7 @@ public static void main(String [] args) {
            
         }
     }
-    //precondition: input is integer
+    //precondition: input is integer  cannot be negative
 //post condition: makes series of Es and Os that number of rows correspond with input, starts with O if even and E if odd
     public static void eo(int maxE){
 //O
@@ -128,7 +128,7 @@ if(i%2 == 0){
 System.out.println("");
  }
     }
-//precondition: input is integer
+//precondition: input is integer cannot be negative
 //post condition: makes upside down pyramid of numbers with number of rows that is the input
 public static void pyramid(int rows){
   int start = 1;
